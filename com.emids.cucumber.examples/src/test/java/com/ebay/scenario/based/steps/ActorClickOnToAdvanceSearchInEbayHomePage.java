@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Ebay_Home {
+public class ActorClickOnToAdvanceSearchInEbayHomePage {
     @Given("As an User I am on Ebay Home Page")
     public void as_an_User_I_am_on_Ebay_Home_Page() {
         // Write code here that turns the phrase above into concrete actions

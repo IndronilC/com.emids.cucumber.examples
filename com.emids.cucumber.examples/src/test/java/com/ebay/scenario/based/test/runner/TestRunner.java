@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/features"},
 glue = {"com.ebay.scenario.based.steps"},
-plugin = {"pretty", "junit:testjunitreport"})
+plugin = {"pretty", "html:testreport"},
+dryRun = false)
 public class TestRunner {
 }
