@@ -3,11 +3,15 @@ package com.ebay.scenario.based.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ActorClickOnToAdvanceSearchInEbayHomePage {
     @Given("As an User I am on Ebay Home Page")
     public void as_an_User_I_am_on_Ebay_Home_Page() {
-        // Write code here that turns the phrase above into concrete actions
+        System.setProperty("webdriver.chrome.driver", "webdrivers/chromedriver/chromedriver.exe");
+        WebDriver webDriver = new ChromeDriver();
+        webDriver.get("https://www.ebay.com/");
     }
 
     @When("I click on The Advanced Search Link")

@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = {"src/test/resources/features"},
 glue = {"com.ebay.scenario.based.steps"},
 plugin = {"pretty", "html:testreport"},
-dryRun = false)
+dryRun = false,
+strict = false)
 public class TestRunner {
 }
