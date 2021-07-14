@@ -30,6 +30,7 @@ public class ActorClickOnToAdvanceSearchInEbayHomePage {
         if(!expURL.equals(actURL)){
             fail("Page does not navigate to the expected Page");
         }
+        webDriver.quit();
     }
 
 

@@ -7,7 +7,12 @@ formatter.feature({
 formatter.scenario({
   "name": "User clicks on to Advanced Search Link",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@eBayAdvanceSearchScenarios"
+    }
+  ]
 });
 formatter.step({
   "name": "As an User I am on Ebay Home Page",
@@ -38,40 +43,5 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.uri("file:src/test/resources/features/ActorClicksOnToSportingGoodInEbayAdvancedSearchPage.feature");
-formatter.feature({
-  "name": "Actor Interacts With Sporting Goods Link in Advance Search Page",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Actor Clicks on to Sporting Goods Link in Advance Search Page",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "As an User I am on Advance Search Page",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "I Click on to Sporting Goods Link in Advance Search Page",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "I Land on the Sporting Good Home Page",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 });

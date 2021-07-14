@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
 glue = {"com.ebay.scenario.based.steps"},
 plugin = {"pretty", "html:testreport"},
 dryRun = false,
-strict = false)
+strict = true,
+tags = {"@eBayAdvanceSearchScenarios"})
 public class TestRunner {
 }
