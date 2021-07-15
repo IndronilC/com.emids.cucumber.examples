@@ -7,9 +7,10 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/features"},
 glue = {"com.ebay.scenario.based.steps"},
-plugin = {"pretty", "html:testreport"},
+plugin = {"usage"},
 dryRun = false,
-strict = true,
-tags = {"@eBayAdvanceSearchScenarios"})
+strict = true, monochrome = false
+//tags = {"@eBayAdvanceSearchScenarios"}
+)
 public class TestRunner {
 }
